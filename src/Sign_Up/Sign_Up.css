@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.form-card{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    margin-block: 4rem;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 4rem;
+    justify-self: center;
+}
+
+.title-text{
+    text-align: center;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg,#2190FF 2.34%,#b673f8 100.78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input input, .form-input select{
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    border-radius: 10px;
+    height: 26px;
+    padding: 2px;
+    padding-inline: 5px;
+}
+
+form button{
+    border: transparent;
+    padding: 8px;
+    margin-top: 1rem;
+    background-color: #4B04E2;
+    border-radius: 20px;
+    color: white;
+}
