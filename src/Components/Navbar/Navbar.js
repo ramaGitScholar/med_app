@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import {Link} from 'react-router-dom'
 
 export default function Navbar() {
   const handleClick = () => {
@@ -7,10 +8,10 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { label: 'Appointments', className: 'links' },
-    { label: 'Reviews', className: 'links' },
-    { label: 'Sign Up', className: 'links btn1' },
-    { label: 'Log In', className: 'links btn1' },
+    { label: 'Appointments', className: 'links', path: '/' },
+    { label: 'Reviews', className: 'links', path: '/' },
+    { label: 'Sign Up', className: 'links btn1', path: '/sign-up' },
+    { label: 'Log In', className: 'links btn1', path: '/log-in' },
   ];
 
   return (
@@ -44,7 +45,7 @@ export default function Navbar() {
         <ul className="links">
           {navItems.map((item, index) => (
             <li key={index} className={item.className}>
-              {item.label}
+              <Link to={item.path}>{item.label}</Link>
             </li>
           ))}
         </ul>
